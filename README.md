@@ -3,7 +3,7 @@
 
 2、题目二：使用 CSS Grid 实现响应式的产品展示布局：该DEMO文件所在位置：src\views\gridDesignDemo\GridDesignDemo.vue，配置了访问localhost:8080/根路径时默认展示该组件。
 
-3、题目三：给【题目一】的功能进行有效的单元测试。已生成对应的测试文件，测试文件路径：coverage\lcov-report\index.html
+3、题目三：给【题目一】的功能进行有效的单元测试。已生成对应的测试文件，测试文件路径：src\test\ControlledPromise.test.js。测试报告生成地址：coverage\lcov-report\index.html。
 
 ## Project setup
 ```
