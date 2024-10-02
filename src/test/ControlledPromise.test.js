@@ -27,4 +27,25 @@ describe('ControlledPromise test', () => {
         const promise = controlledPromise.getPromise();
         await expect(promise).rejects.toBe(expectRejectReason);
     })
+
+
+    // 测试this.resolveFn方法是否被执行
+    test('should resolveFn with be call', async () => {
+        // 预期值
+        const expectResolveValue = "resolve value";
+        // 改变状态 
+        controlledPromise.resolveFn(expectResolveValue);
+        const promise = controlledPromise.getPromise();
+        await expect(promise).resolves.toBe(expectResolveValue);
+    })
+
+     // 测试this.rejectFn方法是否被执行
+     test('should rejectFn with be call', async () => {
+        // 预期值
+        const expectResolveValue = "reject reason";
+        // 改变状态 
+        controlledPromise.rejectFn(expectResolveValue);
+        const promise = controlledPromise.getPromise();
+        await expect(promise).rejects.toBe(expectResolveValue);
+    })
 })

@@ -14,16 +14,16 @@ export default class ControlledPromise {
     constructor() {
         this.promise = new Promise((resolve, reject) => {
             // 3、将可以改变Promise对象状态的resolve跟reject方法赋值给当前对象的resolve跟reject变量
-            this.resolve = resolve;
-            this.reject = reject;
+            this.resolveFn = resolve;
+            this.rejectFn = reject;
         })
     }
     // 2、暴露可供外部调用reslove跟reject方法改变Promise状态
     resolve(value) {
-        this.resolve(value);
+        this.resolveFn(value);
     }
     reject (reason) {
-        this.reject(reason);
+        this.rejectFn(reason);
     }
     // 4、返回这个可控的 Promise 对象
     getPromise() {
