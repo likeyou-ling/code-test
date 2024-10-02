@@ -1,4 +1,5 @@
 # codetest
+尊敬的面试官您好，以下是题目的总体情况，请您查阅：
 1、题目一：实现一个可控的 Promise 工具类：该类在src\action\ControlledPromise.js，src\action\ControlledPromiseUse.js是对ControlledPromise类的外部调用。
 
 2、题目二：使用 CSS Grid 实现响应式的产品展示布局：该DEMO文件所在位置：src\views\gridDesignDemo\GridDesignDemo.vue，配置了访问localhost:8080/根路径时默认展示该组件。
